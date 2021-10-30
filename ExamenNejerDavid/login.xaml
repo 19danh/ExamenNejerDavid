@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamenNejerDavid.login">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Image Source="uisrael.png"/>
+            </StackLayout>
+            <Frame BackgroundColor="Navy" Padding="24" CornerRadius="0">
+                <Label Text="DANH ONLINE" HorizontalTextAlignment="Center" TextColor="Gold" FontSize="20"/>
+
+            </Frame>
+            <Frame BackgroundColor="Navy" Padding="24" CornerRadius="0">
+                <Label Text="Ingreso Estudiantes" HorizontalTextAlignment="Center" TextColor="Gold" FontSize="20"/>
+
+            </Frame>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Label Text="Usuario" Grid.Row="0" Grid.Column="0" />
+                <Entry x:Name="txtUsuario" Keyboard="Text" Grid.Row="0" Grid.Column="1" />
+
+                <Label Text="Contraseña" Grid.Row="1" Grid.Column="0" />
+                <Entry x:Name="txtClave" IsPassword="True" Grid.Row="1" Grid.Column="1" />
+
+            </Grid>
+            <Button x:Name="btnAbrir" Text="Iniciar" Clicked="btnAbrir_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
